@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contact-page">
+        <header>
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Fill out the form below to reach us!</p>
+        </header>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <small class="error-message">Name is required</small>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <small class="error-message">Valid email is required</small>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <small class="error-message">Message cannot be empty</small>
+                </div>
+                <button type="submit">Send Message</button>
+                <div id="successMessage" class="success-message">Thank you! Your message has been sent.</div>
+            </form>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
